@@ -27,7 +27,7 @@ const observerItems = function () {
 
   const options = {
     root: listContainer,
-    // rootMargin: "40px",
+    rootMargin: "-10px",
     threshold: [...Array(100).keys()].map((x) => x / 100),
   };
 
