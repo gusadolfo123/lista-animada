@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: rgb(75, 75, 75);
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  height: calc(100vh - 80px);
+}
+
+.list {
+  height: 435px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 600px;
+  flex: 1 1 auto;
+  overflow-y: scroll;
+  padding-right: 10px;
+  padding-left: 10px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.list-item {
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  color: grey;
+  display: flex;
+  height: 75px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.3s ease;
+}
+
+.list-item:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.list-item-picture {
+  background-size: cover;
+  background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_header/91/91RKJ6KC62PA1594365571485.jpg");
+  height: 75px;
+  width: 140px;
+}
+
+.list-item-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.list-item-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list-item-content {
+  font-size: 10px;
+}
+
+.list-item-date-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+
+.list-item-date-box span {
+  font-size: 12px;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.enabled {
+  display: block;
+}
+
+.disabled {
+  display: none;
+}
