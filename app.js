@@ -18,12 +18,12 @@ const listContainer = document.getElementsByClassName("list")[0];
         </div>`;
     listContainer.innerHTML += templateItem;
   }
-})(listContainer, 40);
+})(listContainer, 120);
 
 const observerItems = function () {
   const items = document.getElementsByClassName("list-item");
-  const width = 300;
-  const height = 75;
+  // const width = 300;
+  // const height = 75;
 
   const options = {
     root: listContainer,
@@ -35,8 +35,9 @@ const observerItems = function () {
     entries.forEach((entry) => {
       const el = entry.target;
       el.style.opacity = entry.intersectionRatio;
-      el.style.width = `${width * entry.intersectionRatio}px`;
+      // el.style.width = `${width * entry.intersectionRatio}px`;
       // el.style.height = `${height * entry.intersectionRatio}px`;
+      el.style.transform = `scale(${entry.intersectionRatio})`;
     });
   }, options);
 

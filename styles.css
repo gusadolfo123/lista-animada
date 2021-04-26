@@ -91,11 +91,3 @@ html {
 .pointer {
   cursor: pointer;
 }
-
-.enabled {
-  display: block;
-}
-
-.disabled {
-  display: none;
-}
